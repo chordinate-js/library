@@ -1,0 +1,19 @@
+{
+  "name": "@chordinate/library",
+  "version": "0.1.0",
+  "description": "Manage a library containing e.g. chords and sheet music",
+  "author": {
+    "name": "Michaël Jacobs",
+    "email": "michael.jacobs92@gmail.com"
+  },
+  "main": "lib/index.js",
+  "devDependencies": {
+    "flow-bin": "^0.81.0",
+    "flow-remove-types": "^1.2.3"
+  },
+  "scripts": {
+    "build": "yarn run flow-remove-types src/ -- -d lib/",
+    "prepublish": "yarn run build"
+  },
+  "license": "MIT"
+}
